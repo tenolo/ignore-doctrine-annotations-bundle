@@ -1,0 +1,1 @@
+ignore-doctrine-annotations-bundle
