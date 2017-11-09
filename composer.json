@@ -1,0 +1,54 @@
+{
+    "name": "tenolo/ignore-doctrine-annotations-bundle",
+    "description": "Helps to configure that the doctrine annotations reader ignores specific annotations.",
+    "keywords": [
+        "doctrine",
+        "annotation",
+        "annotations",
+        "reader",
+        "tenolo",
+        "symfony",
+        "bundle"
+    ],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "homepage": "http://tenolo.de",
+    "authors": [
+        {
+            "name": "tenolo - Robert Bernis, Johannes Herberhold GbR",
+            "email": "info@tenolo.de",
+            "homepage": "http://tenolo.de"
+        },
+        {
+            "name": "Nikita Loges",
+            "email": "n.loges@tenolo.de"
+        }
+    ],
+    "require": {
+        "php": "~5.6|~7.0",
+
+        "symfony/framework-bundle": "~2.8|~3.0|~4.0",
+        "symfony/http-kernel": "~2.8|~3.0|~4.0",
+        "symfony/config": "~2.8|~3.0|~4.0",
+        "symfony/dependency-injection": "~2.8|~3.0|~4.0",
+
+        "doctrine/orm": "~2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tenolo\\Bundle\\IgnoreDoctrineAnnotationsBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tenolo\\Bundle\\IgnoreDoctrineAnnotationsBundle\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
