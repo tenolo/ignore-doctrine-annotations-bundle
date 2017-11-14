@@ -2,6 +2,7 @@
 
 namespace Tenolo\Bundle\IgnoreDoctrineAnnotationsBundle;
 
+use Doctrine\Common\Annotations\AnnotationReader;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
@@ -13,5 +14,17 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  */
 class TenoloIgnoreDoctrineAnnotationsBundle extends Bundle
 {
+
+    /**
+     * @inheritDoc
+     */
+    public function boot()
+    {
+        parent::boot();
+
+        AnnotationReader::addGlobalIgnoredName('company');
+        AnnotationReader::addGlobalIgnoredName('date');
+        AnnotationReader::addGlobalIgnoredName('license');
+    }
 
 }
